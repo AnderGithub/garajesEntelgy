@@ -8,7 +8,7 @@ Para hacer una reserva deberás disponer de un usuario y una contraseña, por lo
 
  
 ####Registro
-Ingresa un usuario, un email y una contraseña y listo.
+Ingresa un usuario, un email y una contraseña y será suficiente.
 
 ####Hacer reserva
 Tendrás que seleccionar un día en un calendario, una hora de inicio que esté libre y una hora de fin.
