@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<!--
+        
+-->
+<html>
+    <head>
+        <title>Garajes Entelgy</title>
+        <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta charset="utf-8">
+
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <script type="text/javascript" charset="utf-8" src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <!--<script src="js/skel-layers.min.js"></script>-->
+        <script src="js/init.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jQueryMobile/jquery.mobile-1.4.5.min.js"></script>
+        <script src="jquery_validate/dist/jquery.validate.min.js"></script>
+        <!--<script src="calendario/external/jquery/jquery.js"></script>-->
+        <!--<script src="calendario/jquery-ui.js"></script>-->
+        <script src="css/bootstrap.min.js"></script>
+        <!--<script src="timepicker/bootstrap-timepicker.min.js"></script>-->
+        <script src="timepicker/bootstrap-timepicker.js"></script>
+
+        <script src="js/utils.js"></script>
+        <script type="text/javascript" src="datepair/datepair.js"></script>
+        <script type="text/javascript" src="datepair/jquery.datepair.js"></script>
+        <!--<script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>-->
+        <!-- <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" />-->
+        <script src="datepair/bootstrap-datepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="datepair/bootstrap-datepicker.css" />   
+        <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+
+        <!-- <link rel="stylesheet" href="calendario/jquery-ui.css" >-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+        <link rel="stylesheet" href="timepicker/bootstrap-timepicker.min.css" >
+
+
+        <link rel="stylesheet" href="css/temas/themes/temas.min.css" />
+        <link rel="stylesheet" href="css/temas/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="js/jQueryMobile/jquery.mobile-1.4.5.min.css" />
+
+        <style>
+            label.error{display:block; color:red;}
+        </style>
+
+    </head>
+    <body class="homepage">
+        <!--Page inicio-->
+        <div data-role="page" id="inicio">
+
+            <!-- Header -->
+            <div  data-role="header" data-theme="a" id="header-wrapper" data-position="fixed">
+                <header id="header" class="container">
+
+                    <!-- Logo -->
+                    <div id="logo">
+
+                        <h1><a href="#">Entelgy Park </a></h1>
+                    </div>
+                </header>
+            </div>
+
+            <!-- Banner -->
+            <div data-role="content" id="banner-wrapper">
+
+                <a data-role="button" data-theme="a" data-transition="slide" href="#pantalla3" class="button big icon fa-arrow-circle-right">Iniciar sesión</a>
+                <a data-role="button" data-theme="d" data-transition="slide" href="#pantalla2"  class="button alt big icon fa-arrow-circle-right">Registro</a>
+
+            </div>
+
+            <!-- Features -->
+            <div id="features-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="4u">
+
+                            <!-- Box -->
+                            <section class="box feature">
+                                <a id="botonDeConsultar" href="#verReservas" data-transition="slide" class="image featured"><img src="images/verReserva.png" alt="" /></a>
+                                <div class="inner">
+                                    <header>
+                                        <h2 id="hachedosAzul">Estado del parking</h2>
+
+                                    </header>
+
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="4u">
+
+                            <!-- Box -->
+                            <section class="box feature">
+                                <a href="#pantalla3" data-transition="slide" class="image featured"><img src="images/hacerReserva.png" alt="" /></a>
+                                <div class="inner">
+                                    <header>
+                                        <h2 id="hachedosVerde">Hacer reserva</h2>
+
+                                    </header>
+
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="4u">
+
+                            <!-- Box -->
+                            <section class="box feature last">
+                                <a href="#pantalla3"  data-transition="slide" class="image featured"><img src="images/borrarReserva.png" alt="" /></a>
+                                <div class="inner">
+                                    <header>
+                                        <h2 id="hachedosRojo">Borrar reserva</h2>
+                                    </header>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <div id="footer-wrapper">
+                <footer id="footer" class="container">
+
+                    <div class="row">
+                        <div class="12u">
+                            <div id="copyright">
+                                <ul class="menu">
+                                    <li>&copy; Untitled. All rights reserved</li><li>Design: Ander Cid</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!--Page registro -->
+        <div data-role="page" id="pantalla2">
+            <div data-role="header" data-position="fixed"></div>
+            <div data-role="header">
+                <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" > Regresar </a>
+
+                <h1> Inserta tus datos</h1>
+            </div>
+            <div class="alert alert-warning alert-dismissable">
+
+                <strong>Campos obligatorios.</strong>
+            </div>
+            <div data-role="content" id="formuregistro">
+
+                <form method="post" id="registro">
+
+                    <table>
+                        <tr>
+                            <td><label >Nombre:</label></td>
+                            <td> <input type="text" name="nombreregistro" class="required" minlength="3" id="nombreregistro"></td>
+                        </tr>
+                        <tr>
+                            <td><label >Correo:</label></td>
+                            <td><input type="email" name="usuarioregistro" class="required email" id="usuarioregistro"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Contraseña:</label></td>
+                            <td><input type="password" name="contraregistro" class="required" id="contraregistro"></td>
+                        </tr>
+                    </table>
+
+                    <input type="submit" value="Registrar" class="btn-group btn-group-justified" id="botonRegistro"></br></br>
+                    <input type="reset" id="botonBorrar" class="btn-group btn-group-justified" value="Borrar datos">
+                </form>
+
+            </div>
+
+
+
+        </div>
+        <!--Page login-->
+        <div data-role="page" id="pantalla3">
+            <div data-role="header" data-position="fixed"></div>
+            <div data-role="header">
+                <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all " data-role="button"> Regresar </a>
+
+                <h1>Ingresa tu usuario y contraseña</h1>
+            </div>
+            <div data-role="content" id="acceso">
+
+                <form id="login">
+
+                    <table>
+                        <tr>
+                            <td><label >Correo:</label></td>
+                            <td><input type="text" name="usuario" id="usuario"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Contraseña:</label></td>
+                            <td><input type="password" name="contra" id="contra"></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Acceder" class="btn-group btn-group-justified" id="botonLogin">
+                </form>
+            </div>
+
+        </div>
+        <!--Page home-->
+        <div data-role="page" id="home">
+            <!-- Header -->
+            <div  data-role="header" data-theme="a" id="header-wrapper" data-position="fixed"></div>
+            <div  data-role="header" data-theme="a" id="header-wrapper">
+                <header id="header" class="container">
+
+                    <!-- Logo -->
+                    <div id="logo">
+
+                        <h1><a href="#">Entelgy Park </a></h1>
+                    </div>
+                </header>
+            </div>
+
+            <!-- Banner -->
+            <div id="bannerCerrarSesion">
+
+                <a data-role="button" data-theme="d" href="#inicio" onclick="borrarSesion()" class="button alt big icon fa-arrow-circle-right">Cerrar sesión</a>
+
+            </div>
+
+
+            <label id="rebienvenida"> Bienvenido 
+                <a href="#perfil" id='bienvenida'><img id="actualizarFoto" src="images/user.png"></a></label>
+
+            <!-- Features -->
+            <div id="features-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="4u">
+
+                            <!-- Box -->
+                            <section class="box feature">
+                                <a id="botonDeConsultar2" href="#verReservas" data-transition="slide" class="image featured"><img src="images/verReserva.png" alt="" /></a>
+                                <div class="inner">
+                                    <header>
+                                        <h2 id="hachedosAzul">Estado del parking</h2>
+                                    </header>
+
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="4u">
+
+                            <!-- Box -->
+                            <section class="box feature">
+                                <a id="botonDeCrear" href="#crearReserva" data-transition="slide" class="image featured"><img src="images/hacerReserva.png" alt="" /></a>
+                                <div class="inner">
+                                    <header>
+                                        <h2 id="hachedosVerde">Hacer reserva</h2>
+
+                                    </header>
+
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="4u">
+
+                            <!-- Box -->
+                            <section class="box feature last">
+                                <a id="botonDeBorrar" data-transition="slide" class="image featured"><img id="fotoBorrar" src="images/borrarReserva.png" alt="" /></a>
+
+                                <div class="inner">
+                                    <header>
+                                        <h2 id="hachedosRojo">Borrar reserva</h2>
+                                    </header>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <div id="footer-wrapper">
+                <footer id="footer" class="container">
+
+
+                    <div class="12u">
+                        <div id="copyright">
+                            <ul class="menu">
+                                <li>&copy; Untitled. All rights reserved</li><li>Design: Ander Cid</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+        <!--Page Crear Reserva-->
+        <div data-role="page" id="crearReserva">
+            <div  data-role="header" data-theme="a" id="header-wrapper" data-position="fixed">
+
+                <header id="header" class="container">
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <a href="#" id="flechaCrear" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all " data-role="button"> Regresar </a>
+
+                        <h1><a href="#">Entelgy Park </a></h1>
+                    </div>
+                </header>
+            </div>
+            <div data-role="content" id="formureserva">
+                <form id="createReserva">
+                    <div id="plaza">
+                        <div class="alert alert-info" role="alert">Reserva tu plaza.</div>
+
+                        <fieldset data-role="controlgroup" data-type="horizontal" >
+
+                            <input type="radio" name="plaza" id="radio-choice-h-2a" value="0" checked="checked">
+                            <label for="radio-choice-h-2a">2ªplanta nº11 </label>
+                            <input type="radio" name="plaza" id="radio-choice-h-2b" value="1">
+                            <label for="radio-choice-h-2b">4ª planta nº5</label>
+                                </fieldset>
+                    </div>
+
+                    <!--  <div id="calendario">
+                          Fecha:<input type="text" name="datepicker" id="datepicker" readonly="readonly" size="12" />
+                      </div> 
+                    <div class="input-append bootstrap-timepicker">
+                      <div> <input data-inline="true" class="time" readonly id="h_inicio" name="h_inicio" type="text">
+                          <span class="add-on"><i class="icon-time"></i></span>
+                      </div>
+                    </div>-->
+
+                    <div id="jqueryExample">
+
+                        <input id="fechaDeInicio" type="text" class="date start" readonly/>
+                        <label id="labelAzul">Desde</label>   
+                        <input id="horaDeInicio" type="text" class="time start" /> 
+                        <label id="labelAzul">hasta</label>   
+                        <input id="horaDeFin" type="text" class="time end" />
+
+                    </div>
+                    <!--          <div id="hora">
+                                     <fieldset data-role="controlgroup" data-iconpos="right">
+                                      <div id="primeracolumna">
+                                          <input type="checkbox" name="hora" id="checkbox-h-6a" value="0800">
+                                          <label for="checkbox-h-6a">8:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6b" value="0900">
+                                          <label for="checkbox-h-6b">9:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6c" value="1000">
+                                          <label for="checkbox-h-6c">10:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6d" value="1100">
+                                          <label for="checkbox-h-6d">11:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6e" value="1200">
+                                          <label for="checkbox-h-6e">12:00</label>
+              
+                                          <input type="checkbox" name="hora" id="checkbox-h-6f" value="1300">
+                                          <label for="checkbox-h-6f">13:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6g" value="1400">
+                                          <label for="checkbox-h-6g">14:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6h" value="1500">
+                                          <label for="checkbox-h-6h">15:00</label>
+                                          <input type="checkbox" name="hora" id="checkbox-h-6i" value="1600">
+                                          <label for="checkbox-h-6i">16:00</label> 
+                                          <input type="checkbox" name="hora" id="checkbox-h-6j" value="1700">
+                                          <label for="checkbox-h-6j">17:00</label>
+                                           </div>
+                                  </fieldset>
+                              </div>-->
+                    <input type="submit" class="btn-group btn-group-justified" value="Crear Reserva" id="botonCrearReserva">
+                </form> 
+            </div>
+        </div>
+        <!--Page Borrar Reserva-->
+        <div data-role="page" id="borrarReserva">
+            <div data-role="header" data-position="fixed"></div>
+            <div  data-role="header" data-theme="a" id="header-wrapper" data-position="fixed">
+                <header id="header" class="container">
+                    <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all " data-role="button"> Regresar </a>
+
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <h1><a href="#">Entelgy Park </a></h1>
+                    </div>
+                </header>
+            </div>
+            <div class="alert alert-info" role="alert">Haz click en una reserva para eliminarla.</div>
+            <div data-role="content" id="formureserva">
+                <form id="deleteReserva">
+                    <!-- <div id="jqueryExample">
+                         Fecha:<input type="text" class="date select" name="datepicker2" id="datepicker2" readonly="readonly" size="12" />
+                     </div> -->
+                    <!-- <input type="submit"  value="Reservas" class="btn-group btn-group-justified" id="botonBorrarReserva">-->
+                    </br>
+                    <div id="listadoReservas" >
+                        <br>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Page Ver Reservas-->
+        <div data-role="page" id="verReservas">
+            <div  data-role="header" data-theme="a" id="header-wrapper" data-position="fixed">
+
+
+                <header id="header" class="container">
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all " data-role="button"> Regresar </a>
+
+                        <h1><a href="#">Entelgy Park </a></h1>
+                    </div>
+                </header>
+            </div>
+            <div class="alert alert-info" role="alert">Selecciona una fecha.</div>
+            <div data-role="content" id="formureserva">
+                <form id="consultas">
+                    <div id="jqueryExample">
+                        <input id="DiaConsulta" type="text" class="date start" readonly/>
+                        <label for="DiaConsulta" class="add-on">
+                            <i class="icon-calendar"></i>
+
+                        </label>
+                    </div>
+                    <input type="submit"  value="Ver reservas" class="btn-group btn-group-justified">
+                    <div id="listadoConsultas">
+                        <!-- <label class="checkbox-inline">
+                             <input type="checkbox" id="Checkbox1" disabled="disabled" value="0700"> 7:00
+                         </label>
+                         <label class="checkbox-inline">
+                             <input type="checkbox" id="Checkbox2" value="0730"> 7:30
+                         </label>
+                         <label class="checkbox-inline">
+                             <input type="checkbox" id="Checkbox3" value="0800"> 8:00
+                         </label>-->
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!--Page perfil-->
+        <div data-role="page" id="perfil">
+            <div data-role="header" data-position="fixed"></div>
+            <div data-role="header">
+                <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all " data-role="button"> Regresar </a>
+
+                <h1>Modifica tus datos</h1>
+            </div>
+            <div data-role="content" id="acceso">
+
+                <form id="login">
+
+                    <table>
+                        <tr>
+                            <td><label >Nombre:</label></td>
+                            <td><input id="modificaNombre" type="text" placeholder="" name="usuario"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Foto:</label></td>
+                            <td><img id="image" src=""></td>
+                        <div id="foto">
+                            <a href="#" id="hacerFoto"><h3>Hacer foto </h3></a>
+                            <a href="#" id="seleccionarFoto"><h3>Seleccionar foto </h3></a>
+                        </div>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Actualizar" class="btn-group btn-group-justified" id="botonActualizar">
+                </form>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+            var nombreusuario = localStorage.getItem('key');
+
+            $(document).ready(function () {
+                document.addEventListener("deviceready", init, false);
+            });
+            /*$(document).ready(function () {
+             init();
+             });*/
+        </script>
+    </body>
+
+</html>
